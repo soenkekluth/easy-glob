@@ -1,0 +1,54 @@
+{
+  "name": "easy-glob",
+  "version": "0.1.0",
+  "description":
+    "simple and easy to use glob with instant results using fast-glob as backend and is faster than node-glob",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "test:update": "jest --verbose --coverage --updateSnapshot",
+    "test:watch": "jest --verbose --watch",
+    "coverage":
+      "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
+    "format": "prettier --write '**/*.{js,json,css}' '**/README.md'",
+    "update": "yarn upgrade-interactive --latest && rm yarn.lock && yarn",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soenkekluth/easy-glob.git"
+  },
+  "keywords": [],
+  "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com)",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write", "git add"],
+    "**/README.md": ["prettier --write", "git add"]
+  },
+  "jest": {
+    "preset": "jest-preset-sk",
+    "rootDir": "./"
+  },
+  "engines": {
+    "node": ">=9.0.0"
+  },
+  "files": ["src"],
+  "bugs": {
+    "url": "https://github.com/soenkekluth/easy-glob/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/easy-glob#readme",
+  "dependencies": {
+    "fast-glob": "^2.2.0",
+    "glob-fs": "^0.1.7",
+    "is-glob": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-sk-node": "1.1.2",
+    "husky": "^0.14.3",
+    "jest": "22.4.3",
+    "jest-preset-sk": "^1.1.0",
+    "lint-staged": "^7.0.1",
+    "prettier": "^1.11.1"
+  }
+}
