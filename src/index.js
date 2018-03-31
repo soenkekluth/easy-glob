@@ -1,5 +1,5 @@
-const Glob = require("./model/glob");
-const create = require("./adapter/create");
+const Glob = require('./model/glob');
+const create = require('./adapter/create');
 
 class EasyGlob {
   constructor(id) {
@@ -21,7 +21,7 @@ class EasyGlob {
   }
 }
 
-const glob = new EasyGlob("fast-glob");
+const glob = new EasyGlob('fast-glob');
 
 module.exports = glob;
 module.exports.EasyGlob = EasyGlob;

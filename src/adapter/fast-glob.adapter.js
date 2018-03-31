@@ -1,4 +1,4 @@
-const fg = require("fast-glob");
+const fg = require('fast-glob');
 
 const read = async glob =>
   new Promise((resolve, reject) => {
@@ -18,5 +18,5 @@ const readSync = glob => {
 };
 module.exports = {
   read: read,
-  readSync: readSync
+  readSync: readSync,
 };

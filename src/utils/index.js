@@ -1,6 +1,6 @@
-const { statSync } = require("fs");
-const { resolve } = require("path");
-const isGlob = require("is-glob");
+const { statSync } = require('fs');
+const { resolve } = require('path');
+const isGlob = require('is-glob');
 
 const regex = /,?[\s]+/g;
 
@@ -29,7 +29,7 @@ const isFile = path => {
 const appendSlash = q => {
   let nq = q;
   if (isDir(nq)) {
-    nq = q.charAt(q.length - 1).match(/[^/]/) ? q + "/*" : q;
+    nq = q.charAt(q.length - 1).match(/[^/]/) ? q + '/*' : q;
   }
   return nq;
 };
@@ -45,12 +45,11 @@ const parse = (pattern, { slash = true }) => {
 const filter = entries => {
   const result = {
     include: [],
-    exclude: []
+    exclude: [],
   };
   for (let i = 0, l = entries.length; i < l; i++) {
     const e = entries[i];
-    (e.indexOf("!") === 0 && result.exclude.push(e.substr(1))) ||
-      result.include.push(e);
+    (e.indexOf('!') === 0 && result.exclude.push(e.substr(1))) || result.include.push(e);
   }
   return result;
 };
@@ -62,6 +61,6 @@ module.exports = {
   appendSlash,
   regex,
   parse,
-  filter
+  filter,
 };
 //.map(entry => appendWildcard(entry))

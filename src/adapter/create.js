@@ -1,8 +1,8 @@
 const create = name => {
   try {
-    return require("./" + name + ".adapter");
+    return require('./' + name + '.adapter');
   } catch (e) {
-    return require("./fast-glob.adapter");
+    return require('./fast-glob.adapter');
   }
   // switch (name) {
   //   case 'glob-fs':

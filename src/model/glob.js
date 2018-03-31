@@ -1,5 +1,5 @@
-const { filter, parse } = require("../utils");
-const defaults = require("../defaults");
+const { filter, parse } = require('../utils');
+const defaults = require('../defaults');
 
 class Glob {
   constructor(glob, props = {}) {
@@ -9,14 +9,14 @@ class Glob {
     let entries = parse(this.glob, true);
 
     if (this.props.exclude.map) {
-      entries = entries.concat(this.props.exclude.map(e => "!" + e));
+      entries = entries.concat(this.props.exclude.map(e => '!' + e));
     }
     const filtered = filter(entries);
 
     this.data = {
       entries: entries,
       include: filtered.include,
-      exclude: filtered.exclude
+      exclude: filtered.exclude,
     };
   }
 

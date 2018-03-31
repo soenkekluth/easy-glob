@@ -1,4 +1,4 @@
-const engine = require("glob-fs")();
+const engine = require('glob-fs')();
 // const engine = require('glob-fs')();
 
 // const exclude = (pattern) => {
@@ -17,7 +17,7 @@ const init = glob => {
 
 const read = async glob => {
   init(glob);
-  return engine.readdirPromise(glob.include.join(" "));
+  return engine.readdirPromise(glob.include.join(' '));
 };
 
 const readSync = glob => {
@@ -25,10 +25,10 @@ const readSync = glob => {
   // console.log('######### glob.entries', '|' + glob.include.join(' ') + '|');
 
   // return engine.readdirSync(glob.include.join(' '));
-  return engine.readdirSync(glob.include.join(" "));
+  return engine.readdirSync(glob.include.join(' '));
 };
 
 module.exports = {
   read: read,
-  readSync: readSync
+  readSync: readSync,
 };
