@@ -10,6 +10,7 @@
     "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
     "format": "prettier --write '**/*.{js,json,css}' '**/README.md'",
     "update": "yarn upgrade-interactive --latest && rm yarn.lock && yarn",
+    "release": "np",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -55,6 +56,7 @@
     "jest": "22.4.3",
     "jest-preset-sk": "^1.1.0",
     "lint-staged": "^7.0.1",
+    "np": "^2.20.1",
     "prettier": "^1.11.1"
   }
 }
