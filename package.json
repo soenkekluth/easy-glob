@@ -1,6 +1,6 @@
 {
   "name": "easy-glob",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "simple and easy to use glob with instant results using fast-glob as backend and is faster than node-glob",
   "main": "src/index.js",
   "scripts": {
@@ -17,7 +17,14 @@
     "type": "git",
     "url": "git+https://github.com/soenkekluth/easy-glob.git"
   },
-  "keywords": [],
+  "keywords": [
+    "glob",
+    "patterns",
+    "fast",
+    "easy",
+    "cli",
+    "implementation"
+  ],
   "author": "Sönke Kluth <mail@soenkekluth.com> (https://soenkekluth.com)",
   "license": "MIT",
   "lint-staged": {
