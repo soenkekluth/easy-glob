@@ -1,6 +1,6 @@
 {
   "name": "easy-glob",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "simple and easy to use glob with instant results using fast-glob as backend and is faster than node-glob",
   "main": "src/index.js",
   "scripts": {
