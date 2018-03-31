@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/soenkekluth/easy-glob.svg?branch=master)](https://travis-ci.org/soenkekluth/easy-glob)
+
 # easy-glob
 
 simple and easy to use glob with instant results using fast-glob as backend and is faster than node-glob.
