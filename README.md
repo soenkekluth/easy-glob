@@ -6,6 +6,8 @@ simple and easy to use glob with instant results using fast-glob as backend and 
 
 ## Usage
 
+### Node
+
 ```js
 const glob = require('easy-glob');
 
@@ -20,4 +22,17 @@ console.log(syncRes); // ['file1.js', 'file2.js']
 // promise
 glob.read('./*.js')
   .then(result => console.log(result)) // ['file1.js', 'file2.js']
+```
+
+### CLI
+
+```bash
+$ glob read <pattern> [options]
+$ glob readSync <pattern> [options]
+
+# Examples
+$ glob read "./*"
+$ glob read "./**/*.js, src/"
+$ glob readSync "./*"
+$ glob readSync "./**/*.js, src/"
 ```

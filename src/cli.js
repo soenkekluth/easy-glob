@@ -21,8 +21,8 @@ program
 
 program
   .command('readSync <pattern>', 'read filesystem sync with glob pattern')
-  .example('read "./*"')
-  .example('read "./**/*.js, "src/"')
+  .example('readSync "./*"')
+  .example('readSync "./**/*.js, "src/"')
   .action((pattern, options) => {
     const result = glob.readSync(pattern);
     process.stdout.write(result.join('\n'));
