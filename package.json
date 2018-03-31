@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "simple and easy to use glob with instant results using fast-glob as backend and is faster than node-glob",
   "main": "src/index.js",
+  "bin": {
+    "easy-glob": "src/cli.js",
+    "glob": "src/cli.js",
+    "lg": "src/cli.js"
+  },
   "scripts": {
     "test": "jest --coverage --verbose",
     "test:update": "jest --verbose --coverage --updateSnapshot",
@@ -54,7 +59,8 @@
   "dependencies": {
     "fast-glob": "^2.2.0",
     "glob-fs": "^0.1.7",
-    "is-glob": "^4.0.0"
+    "is-glob": "^4.0.0",
+    "sade": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "4.19.1",
