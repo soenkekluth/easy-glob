@@ -1,17 +1,12 @@
 const fg = require('fast-glob');
 
 const read = async glob =>
-  new Promise((resolve, reject) => {
-    fg
-      .async(glob.entries)
-      .then(res => {
-        resolve(res);
-      })
-      .catch(e => {
-        console.error(e);
-        reject(e);
-      });
-  });
+  fg
+    .async(glob.entries)
+    .then(res => res)
+    .catch(e => {
+      throw e;
+    });
 
 const readSync = glob => {
   return fg.sync(glob.entries);
