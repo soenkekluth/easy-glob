@@ -27,12 +27,11 @@ glob.read('./*.js')
 ### CLI
 
 ```bash
+$ glob <pattern> [options]
 $ glob read <pattern> [options]
 $ glob readSync <pattern> [options]
 
 # Examples
-$ glob read "./*"
-$ glob read "./**/*.js, src/"
-$ glob readSync "./*"
-$ glob readSync "./**/*.js, src/"
+$ glob "./*"
+$ glob "./**/*.js, src/"
 ```
