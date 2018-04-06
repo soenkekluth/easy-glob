@@ -50,7 +50,8 @@
     "node": ">=9.0.0"
   },
   "files": [
-    "src"
+    "src",
+    "README.md"
   ],
   "bugs": {
     "url": "https://github.com/soenkekluth/easy-glob/issues"
