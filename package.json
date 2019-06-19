@@ -58,7 +58,7 @@
   },
   "homepage": "https://github.com/soenkekluth/easy-glob#readme",
   "dependencies": {
-    "fast-glob": "^2.2.0",
+    "fast-glob": "^3.0.0",
     "glob-fs": "^0.1.7",
     "is-glob": "^4.0.0",
     "sade": "^1.4.0"
